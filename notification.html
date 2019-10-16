@@ -14,7 +14,7 @@
 <style type="text/css">
 * {
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -96,6 +96,16 @@ nav img {
 
 }
 
+.hc-bell{
+	width:36px;
+	height: 36px;
+}
+
+.box{
+	box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25)!important;
+	border: none!important;
+}
+
 .menu {
 	width: 15%;
 	float: left;
@@ -105,7 +115,7 @@ nav img {
 .main {
 	width: 85%;
 	float: left;
-	padding-left: 15px;
+	/* padding-left: 15px; */
 	overflow: hidden;
 
 }
@@ -117,7 +127,7 @@ nav img {
 }
 
 h1 {
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -151,7 +161,7 @@ h1 {
 
 
 b {
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -160,7 +170,7 @@ b {
 
 
 span {
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -168,7 +178,7 @@ span {
 }
 
 p {
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
@@ -287,7 +297,8 @@ body {
 
 nav {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-	box-shadow: 0px 1.5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	/* box-shadow: 0px 1.5px rgba(0, 0, 0, 0.25); */
 }
 
 .main {
@@ -298,6 +309,7 @@ nav {
 	width: 3rem;
 	height: 3rem;
 }
+
 
 
 .sidebar ul a {
@@ -441,7 +453,7 @@ nav img {
 	</div>
 
 	<div class="main" id="hc-main">
-		<nav>
+		<!-- <nav>
 			<div class="d-flex bd-highlight">
 				<div class="p-2 flex-grow-1 bd-highlight">
 					<div>
@@ -453,21 +465,62 @@ nav img {
 
 				</div>
 				<div class="p-2 bd-highlight navli">
-					<a href="#" ><img src="https://res.cloudinary.com/ros4eva/image/upload/v1570747848/help_bv586q.png" class="hc-small"></a>
+					<a class="nav-link p-3" href="#"><img src="https://lancer-app.000webhostapp.com/images/svg/help.svg" height="25" width="auto"> <span class="d-lg-none d-xl-none"> You need help?</span></a>
 				</div>
 				<div class="p-2 bd-highlight navli">
-					<a href="#" ><img src="https://res.cloudinary.com/ros4eva/image/upload/v1570747848/alarm_nqoo8i.png" class="hc-small"></a>
+					<a class="nav-link border-left p-3" href="#"><img src="https://lancer-app.000webhostapp.com/images/svg/alarm-clock.svg" height="25" width="auto"> <span class="d-lg-none d-xl-none"> Reminder</span></a>
 				</div>
 				<div class="p-2 bd-highlight navli">
-					<!-- <a href="#" ><img src="https://res.cloudinary.com/ros4eva/image/upload/v1570747847/notification_lipoc8.png"></a> -->
-					<!-- replaced image with font-awesome -->
 					<a class="nav-link" href="#"><i class="fa fa-bell hc-size" aria-hidden="true"></i></a>
 				</div>
 				<div class="p-2 bd-highlight user">
 					<a href="#" id="hc-black"><b >AU</b></a>
 				</div>
+
+				
+			</div>
+		</nav> -->
+
+		<nav class="navbar navbar-expand-lg navbar-light shadow-none box">
+			<div class="container-fluid">
+				<div class="ml-4 pl-4" >
+					<div class="ml-4 pl-4">
+						<form class="form-inline my-2 ml-4">
+							<div class="input-group ml-4 pl-4">
+								<div class="input-group-prepend ml-4 pl-4">
+									<span class="input-group-text border-right-0 bg-white" id="basic-addon1"><i class="fa fa-search" id= searchIco></i></i></span>
+								</div>
+								<input class="form-control border border-left-0 searchBox" type="text" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+							</div>
+						</form>
+					</div>
+
+				</div>
+				
+				
+				<!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-align-justify"></i>
+				</button> -->
+				
+				<div id="navbarSupportedContent ">
+					<ul class="nav navbar-expand-sm ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link p-3" href="#"><img src="https://lancer-app.000webhostapp.com/images/svg/help.svg" height="25" width="auto"> <span class="d-lg-none d-xl-none"> You need help?</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-left p-3" href="#"><img src="https://lancer-app.000webhostapp.com/images/svg/alarm-clock.svg" height="25" width="auto"> <span class="d-lg-none d-xl-none"> Reminder</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-left p-3" href="#"><img src="https://res.cloudinary.com/helencee/image/upload/v1571212327/notification-icons/aqua-blue-bell_sjmokm.png" height="40" width="40" class="hc-bell"> <span class="d-lg-none d-xl-none"> Notification</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-left p-3" href="#"><span class="border rounded-circle p-1 font-weight-bold">AU</span> <span class="d-lg-none d-xl-none"> Hello John</span></a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
+		
 
 		<!-- grouping notifications -->
 		<div class="notification-case">
@@ -493,7 +546,7 @@ nav img {
 						<img src="https://res.cloudinary.com/helencee/image/upload/v1571155836/notification-icons/green-ribbon_gcyuoh.png">
 						
 					</div>
-					<button class="float"><a href="#" class="my-float">+</a></button>
+					<!-- <button class="float"><a href="#" class="my-float">+</a></button> -->
 						<div class="p-2 w-100 bd-highlight">
 							<b>A new invoice was created</b><br>
 						<span>It is a long established fact that a reader will be distracted by the readable content of a page when at its layout.</span>
